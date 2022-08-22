@@ -20,13 +20,7 @@ public class FileReader {
             e.printStackTrace();
         }
 
-        System.out.println(stringBuilder);
-
         List<String> res = Arrays.asList(stringBuilder.toString().split("\n"));
-
-        for (int i = 0; i < res.size(); i++) {
-            System.out.println(res.get(i));
-        }
 
         String name = res.get(0).split("\\s+")[1];
         int age = Integer.parseInt(res.get(1).split("\\s+")[1]);
